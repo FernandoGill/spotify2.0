@@ -1,0 +1,476 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem 7rem;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, #051937, #112049, #23265b, #372b6c, #4f2e7b);
+}
+
+header {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header input {
+    width: 30rem;
+    height: 5rem;
+    margin-right: 1rem;
+    padding-left: 2rem;
+    background-color: rgba(254, 254, 255, 0.303);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+header input:focus {
+    outline: none;
+}
+
+header input::placeholder {
+    color: white;
+}
+
+header button {
+    width: 8rem;
+    height: 5rem;
+    background-color: rgba(254, 254, 255, 0.303);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+header button:hover {
+    cursor: pointer;
+}
+
+.portada {
+    height: 26rem;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.portada img {
+    width: 26rem;
+    height: 100%;
+    border-radius: 11px;
+    box-shadow: rgba(14, 14, 14, 0.442) 1px 3px 8px 2px;
+}
+
+.titulos {
+    height: 17rem;
+    margin-top: 3rem;
+}
+
+
+.titulos h3 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.titulos .user {
+    display: flex;
+    align-items: center;
+}
+
+.titulos .user img {
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.titulos .user p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.titulos h4 {
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    width: 2.5rem;
+    margin-right: 2rem;
+    margin-top: 0rem;
+}
+
+.icons img:hover {
+    cursor: pointer;
+}
+
+
+.play {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #1ccc4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play img {
+    width: 4rem;
+    margin: 0px;
+}
+
+.play:hover {
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.agregar {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.agregar input {
+    width: 15rem;
+    height: 3rem;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.agregar input:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #1ccc4b;
+    transition: ease 0.6s;
+}
+
+.songs {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+}
+
+.song {
+    width: 100%;
+    height: 7rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.song img {
+    width: 7rem;
+    border-radius: 5px;
+}
+
+.song img:hover {
+    cursor: pointer;
+}
+
+.song .description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.description h2{
+    font-size: 1.6rem;
+}
+
+.description h2:hover {
+    color: #1ccc4b;
+    cursor: pointer;
+}
+
+.description p {
+    color: gainsboro;
+    font-size: 1.3rem;
+}
+
+.description p:hover {
+    color: #1ccc4bb1;
+    cursor: pointer;
+}
+
+.fav-icon {
+    position: absolute;
+    right: 0;
+}
+
+.fav-icon img {
+    width: 2.2rem;
+}
+
+.actualizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.actualizar button {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    background-color: #253970;
+    border: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.actualizar button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #1ccc4b;
+    transition: ease 0.6s;
+}
+
+footer {
+    height: 3rem;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgrey;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    body {
+        padding: 3rem 3rem;
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        background-image: linear-gradient(to bottom, #04046f, #00318a, #004f98, #006b9d, #05859f);
+    }
+
+    header {
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header input {
+        width: 22rem;
+        height: 4rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        background-color: rgba(254, 254, 255, 0.303);
+        border: none;
+        border-radius: 4px;
+        color: white;
+    }
+
+    header input:focus {
+        outline: none;
+    }
+
+    header input::placeholder {
+        color: white;
+    }
+
+    header button {
+        width: 8rem;
+        height: 4rem;
+        background-color: rgba(254, 254, 255, 0.303);
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .portada {
+        height: 23rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .portada img {
+        width: 23rem;
+        height: 100%;
+        border-radius: 11px;
+        box-shadow: rgba(14, 14, 14, 0.442) 1px 3px 8px 2px;
+    }
+
+    .titulos {
+        height: 17rem;
+        margin-top: 3rem;
+    }
+
+
+    .titulos h3 {
+        color: white;
+        font-size: 2.8rem;
+    }
+
+    .titulos .user {
+        display: flex;
+        align-items: center;
+    }
+
+    .titulos .user img {
+        width: 2rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .titulos .user p {
+        color: white;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    .titulos h4 {
+        color: white;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icons img {
+        width: 2.5rem;
+        margin-right: 2rem;
+        margin-top: 0rem;
+    }
+
+
+    .play {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        border: none;
+        background-color: #1ccc4b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play img {
+        width: 4rem;
+        margin: 0px;
+    }
+
+    .agregar {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .agregar input {
+        width: 15rem;
+        height: 3rem;
+        background: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .songs {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .song {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .song img {
+        width: 7rem;
+        border-radius: 4px;
+    }
+
+    .song .description {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    .description h2{
+        font-size: 1.6rem;
+    }
+
+    .description p {
+        color: gainsboro;
+        font-size: 1.3rem;
+    }
+
+    .fav-icon {
+        position: absolute;
+        right: 0;
+    }
+
+    .fav-icon img {
+        width: 2.2rem;
+    }
+
+    .actualizar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .actualizar button {
+        width: 13rem;
+        height: 4rem;
+        font-size: 1.6rem;
+        background-color: #4223b0;
+        border: none;
+        color: white;
+        border-radius: 20px;
+    }
+
+    footer {
+        height: 3rem;
+        position: relative;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: darkgrey;
+    }
+
+}

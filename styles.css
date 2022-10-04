@@ -1,0 +1,244 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        height: 100%;
+        width: 100%;
+        padding: 3rem 3rem;
+        font-family: 'Roboto', sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #191919;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    header .search {
+        display: flex;
+        align-items: center;
+    }
+
+    header .search input {
+        height: 5rem;
+        width: 24rem;
+        border: none;
+        border-radius: 4px 0px 0px 4px;
+        padding-left: 1.5rem;
+        background-color: rgba(254, 254, 255, 0.303);
+        color: white;
+    }
+
+    .search input::placeholder {
+        color: white;
+    }
+
+    .search input:nth-child(1):focus {
+        outline: none;
+    }
+
+    header button {
+        color: white;
+        background-color: rgba(254, 254, 255, 0.303);
+        border: none;
+        width: 9rem;
+        height: 5rem;
+        margin-left: 1px;
+        border-radius: 0px 4px 4px 0px;
+    }
+
+    .top-artists {
+        margin-top: 3rem;
+        height: 20rem;
+    }
+
+    .top-artists p {
+        font-size: 1.8rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .cards-artists {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .card1 {
+        height: 15rem;
+        width: 10rem;
+        margin-right: 1rem;
+        background-image: url(assets/alvarou.jpeg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+        padding: 1rem;
+    }
+    .card2 {
+        height: 15rem;
+        width: 10rem;
+        margin-right: 1rem;
+        background-image: url(assets/ferxxo.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+        padding: 1rem;
+    }
+    .card3 {
+        height: 15rem;
+        width: 10rem;
+        background-image: url(assets/mora.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+        padding: 1rem;
+    }
+
+    .playlists {
+        margin-top: 3rem;
+    }
+
+    .playlists-section {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .playlists p {
+        font-size: 1.8rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .playlists a {
+        text-decoration: none;
+    }
+
+    .playlist1 {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 11rem;
+        height: 11rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        background-image: url(assets/portada.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .playlist2 {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 11rem;
+        height: 11rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        background-image: url(assets/japan.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .playlist3 {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 11rem;
+        height: 11rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        background-image: url(assets/microdosis.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .playlist4 {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 11rem;
+        height: 11rem;
+        margin-bottom: 4rem;
+        border-radius: 5px;
+        background-image: url(assets/motomami.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .playlist5 {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 11rem;
+        height: 11rem;
+        margin-bottom: 4rem;
+        border-radius: 5px;
+        background-image: url(assets/nostalgia.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .playlist6 {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 11rem;
+        height: 11rem;
+        margin-bottom: 4rem;
+        border-radius: 5px;
+        background-image: url(assets/yeezua.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    .reproductor {
+        height: 40rem;
+        border: 2px solid white;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .reproductor img {
+        width: 22rem;
+        margin: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .reproductor p {
+        color: white;
+        font-size: 2.4rem;
+    }
+
+    .reproductor audio {
+        border-radius: none;
+        margin: 1.5rem;
+    }
+
+}
